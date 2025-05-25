@@ -14,8 +14,8 @@
     <h2>Filtragem dos produtos</h2>
     <form id="form">
         <label for="categoria">Categoria: </label>
-        <select id="categoria">
-            <option value="todos" disabled selected>Selecione</option>
+        <select id="inputCategoria">
+            <option value="" disabled selected>Selecione</option>
             <option value="todos">Todos</option>
             <option value="monitores">Monitores</option>
             <option value="teclados">Teclados</option>
@@ -23,11 +23,22 @@
         </select>
         <br>
         <label for="disponibilidade">Somente disponiveis: <input type="checkbox" id="disponibilidade" value="true"></label>
+        <label for="ordenarPreco">Ordenar por preço:</label>
+        <select id="ordenarPreco">
+            <option value="">Nenhuma</option>
+            <option value="men">Menor para maior</option>
+            <option value="mai">Maior para menor</option>
+        </select>
     </form>
     <br>
 
     <button id="btnMostrar">Filtrar</button>
+    <div id="produtosContainer"></div>
+    
+    <button id="btnTodos">Produtos</button>
+    <div id="produtosContainerTodos"></div>
     <hr>
+
+    <script src="./assets/app.js"></script>
 </body>
-<script src="./assets/app.js"></script>
 </html>
