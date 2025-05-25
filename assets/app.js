@@ -86,11 +86,12 @@ const btnTodos = document.getElementById('btnTodos');
 btnTodos.addEventListener('click', function (event) {
     event.preventDefault();
 
-    const elementos = document.querySelectorAll('.produto, h3');
-    elementos.forEach(function (elemento) {
-        elemento.remove();
-    });
+    const produtosContainer = document.getElementById('produtosContainer');
 
+    // Limpa os produtos antes de mostrar tudo
+    produtosContainer.innerHTML = '';
+
+    // Agrupando e exibindo
     const categoriasAgrupadas = {};
 
     produtos.forEach(function (produto) {
@@ -115,6 +116,7 @@ btnTodos.addEventListener('click', function (event) {
         });
     }
 });
+
 
 
 // Adicionando o evento de click no botão
