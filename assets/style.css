@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+body h1 {
+    display: flex;
+    justify-content: center;
+    color: blueviolet;
+}
+
+.erro {
+    color: red;
+}
+
+.tecnologia {
+    font-weight: bold;
+}
+
+.alimentos {
+    background-color: yellow;
+}
