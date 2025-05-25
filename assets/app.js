@@ -117,7 +117,7 @@ btnMostrar.addEventListener('click', function (event) {
             let div = document.createElement("DIV");
             div.innerHTML = `<br>${produtosDispo[i].Produto} - R$${produtosDispo[i].Preco}</br>`
             div.className = 'produto';
-            div.id = 'produto' + i;
+            div.id = `produto ${i}`;
             
             document.body.appendChild(div);
         }
