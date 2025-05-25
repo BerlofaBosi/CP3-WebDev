@@ -115,7 +115,7 @@ btnMostrar.addEventListener('click', function (event) {
     for (let i = 0; i < produtosDispo.length; i++) {
         if (categoria === produtosDispo[i].Categoria || categoria === "todos") {
             let div = document.createElement("DIV");
-            div.innerHTML = `<br>${produtosDispo[i].Produto} - R$${produtosDispo[i].Preco}</br>`
+            div.innerHTML = `${produtosDispo[i].Produto} - R$${produtosDispo[i].Preco}</br>`
             div.className = 'produto';
             div.id = `produto ${i}`;
             

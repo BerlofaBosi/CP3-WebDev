@@ -7,16 +7,21 @@ body h1 {
     display: flex;
     justify-content: center;
     color: blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.erro {
-    color: red;
+.produto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
 }
 
-.tecnologia {
-    font-weight: bold;
-}
-
-.alimentos {
-    background-color: yellow;
+.produto:hover {
+    background-color: #f0f0f0;
+    scale: 1.02;
 }
