@@ -119,7 +119,7 @@ btnTodos.addEventListener('click', function (event) {
 
 
 
-// Adicionando o evento de click no botão
+// Botão para mostrar os produtos filtrados
 btnMostrar.addEventListener('click', function (event) {
     event.preventDefault();
 

@@ -16,24 +16,25 @@
         <label for="categoria">Categoria: </label>
         <select id="inputCategoria">
             <option value="" disabled selected>Selecione</option>
-            <option value="todos">Todos</option>
+            <option value="">Nenhuma</option>
             <option value="monitores">Monitores</option>
             <option value="teclados">Teclados</option>
             <option value="mousesGamer">Mouses Gamers</option>
         </select>
         <br>
         <label for="disponibilidade">Somente disponiveis: <input type="checkbox" id="disponibilidade" value="true"></label>
+        <br>
         <label for="ordenarPreco">Ordenar por preço:</label>
         <select id="ordenarPreco">
-            <option value="">Nenhuma</option>
+            <option value="" disabled selected>Selecione</option>
             <option value="men">Menor para maior</option>
             <option value="mai">Maior para menor</option>
         </select>
     </form>
     <br>
 
+    <button id="btnTodos">Exbir Todos os Produtos</button>
     <button id="btnMostrar">Filtrar</button>
-    <button id="btnTodos">Produtos</button>
     <hr>
 
     <div id="produtosContainer"></div>
